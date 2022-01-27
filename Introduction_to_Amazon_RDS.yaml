@@ -213,7 +213,7 @@ Resources:
   RDSPrivateSubnetGroup:      
     Type: AWS::RDS::DBSubnetGroup
     Properties: 
-      DBSubnetGroupDescription: "Private subnet group"
+      DBSubnetGroupDescription: "Private subnet group for DB"
       DBSubnetGroupName: !Sub ${EnvironmentName}-private-subnet-group
       SubnetIds: 
         - !Ref PrivateSubnet1
